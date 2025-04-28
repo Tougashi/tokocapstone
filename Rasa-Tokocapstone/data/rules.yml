@@ -1,0 +1,8 @@
+version: "3.1"
+
+rules:
+
+- rule: rekomendasi laptop
+  steps:
+    - intent: cari_laptop
+    - action: action_rekomendasi_laptop
