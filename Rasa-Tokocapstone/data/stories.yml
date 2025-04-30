@@ -1,30 +1,21 @@
 version: "3.1"
 
 stories:
-
-- story: happy path
+- story: greet and search laptop
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: cari_laptop
+  - action: action_rekomendasi_laptop
+  - intent: goodbye
+  - action: utter_goodbye
 
-- story: sad path 1
+- story: direct laptop search
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: cari_laptop
+  - action: action_rekomendasi_laptop
 
-- story: sad path 2
+- story: say goodbye
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+  - intent: goodbye
   - action: utter_goodbye
