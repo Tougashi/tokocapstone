@@ -40,6 +40,9 @@ responses:
   utter_goodbye:
     -
       text: 'Terima kasih telah menggunakan layanan kami. Sampai jumpa!'
+  utter_cari_laptop:
+    -
+      text: ''
 actions:
   - action_rekomendasi_laptop
 session_config:

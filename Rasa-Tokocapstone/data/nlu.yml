@@ -2,10 +2,10 @@ version: '3.1'
 nlu:
   -
     intent: greet
-    examples: "|\n      - |\n      - - - - - - - - - - - - - hey\n      - - - - - - - - - - - - - hello\n      - - - - - - - - - - - - - hi\n      - - - - - - - - - - - - - halo\n      - - - - - - - - - - - - - selamat pagi\n      - - - - - - - - - - - - - selamat siang\n      - - - - - - - - - - - - - selamat sore\n      - - - - - - - - - - - - - selamat malam"
+    examples: "test\nhello\nhi\nhalo\nselamat pagi\nselamat siang\nselamat sore\nselamat malam"
   -
     intent: goodbye
-    examples: "|\n      - |\n      - - - bye\n      - - - goodbye\n      - - - sampai jumpa\n      - - - selamat tinggal\n      - - - terima kasih\n      - - - thanks"
+    examples: "bye\ngoodbye\nsampai jumpa\nselamat tinggal\nterima kasih\nthanks"
   -
     intent: cari_laptop
-    examples: "- saya cari laptop [ASUS](brand)\n- cari laptop [ACER](brand)\n- rekomendasi laptop [HP](brand)\n- laptop [LENOVO](brand)\n- mau beli laptop [DELL](brand)\n- cari laptop [APPLE](brand)\n- saya butuh laptop [ASUS](brand) harga [15](max) juta\n- cari laptop [ACER](brand) dibawah [10](max) juta\n- mau beli laptop [HP](brand) budget [20](max) juta\n- rekomendasi laptop [LENOVO](brand) harga [8](min) sampai [12](max) juta\n- laptop [DELL](brand) antara [5](min) sampai [8](max) juta\n- laptop [APPLE](brand) kisaran [25](min) juta\n- cari laptop [ASUS](brand) range harga [10](min) sampai [15](max) juta\n- rekomendasi laptop [ACER](brand) budget maksimal [8](max) juta\n- laptop [HP](brand) minimal harga [6](min) juta\n"
+    examples: "saya cari laptop [ASUS](brand)\ncari laptop [ACER](brand)\nrekomendasi laptop [HP](brand)\nlaptop [LENOVO](brand)\nmau beli laptop [DELL](brand)\ncari laptop [APPLE](brand)\nsaya butuh laptop [ASUS](brand) harga [15](max) juta\ncari laptop [ACER](brand) dibawah [10](max) juta\nmau beli laptop [HP](brand) budget [20](max) juta\nrekomendasi laptop [LENOVO](brand) harga [8](min) sampai [12](max) juta\nlaptop [DELL](brand) antara [5](min) sampai [8](max) juta\nlaptop [APPLE](brand) kisaran [25](min) juta\ncari laptop [ASUS](brand) range harga [10](min) sampai [15](max) juta\nrekomendasi laptop [ACER](brand) budget maksimal [8](max) juta\nlaptop [HP](brand) minimal harga [6](min) juta"

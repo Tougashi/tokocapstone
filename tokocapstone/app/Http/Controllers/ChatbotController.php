@@ -61,7 +61,8 @@ class ChatbotController extends Controller
                 }, $examples);
                 $examples = array_filter($examples);
 
-                $intent['examples'] = "|\n      - " . implode("\n      - ", $examples);
+                // Format examples without extra dashes
+                $intent['examples'] = implode("\n", $examples);
                 break;
             }
         }
