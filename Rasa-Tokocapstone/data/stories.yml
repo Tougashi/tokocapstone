@@ -1,6 +1,25 @@
 version: "3.1"
 
 stories:
+
+- story: greet path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: laptop search path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cari_laptop
+  - action: action_rekomendasi_laptop
+  - intent: goodbye
+  - action: utter_goodbye
 - story: greet and search laptop
   steps:
   - intent: greet

@@ -1,49 +1,47 @@
-version: "3.1"
-
+version: '3.1'
 intents:
   - greet
   - goodbye
   - cari_laptop
-
 entities:
   - brand
   - kategori
   - min
   - max
-
 slots:
   brand:
     type: text
     mappings:
-    - type: from_entity
-      entity: brand
+      -
+        type: from_entity
+        entity: brand
   kategori:
     type: text
     mappings:
-    - type: from_entity
-      entity: kategori
+      -
+        type: from_entity
+        entity: kategori
   min:
     type: float
     mappings:
-    - type: from_entity
-      entity: min
+      -
+        type: from_entity
+        entity: min
   max:
     type: float
     mappings:
-    - type: from_entity
-      entity: max
-
+      -
+        type: from_entity
+        entity: max
 responses:
   utter_greet:
-  - text: "Halo! Ada yang bisa saya bantu? 
-          \nAnda bisa mencari laptop dengan menyebutkan merek (ASUS, ACER, HP, LENOVO, DELL, APPLE) dan kategori penggunaan (gaming, editing, dll)"
-
+    -
+      text: "Halo wow! Ada yang bisa saya bantu? \r\nAnda bisa mencari laptop dengan menyebutkan merek (ASUS, ACER, HP, LENOVO, DELL, APPLE) dan kategori penggunaan (gaming, editing, dll)"
   utter_goodbye:
-  - text: "Terima kasih telah menggunakan layanan kami. Sampai jumpa!"
-
+    -
+      text: 'Terima kasih telah menggunakan layanan kami. Sampai jumpa!'
 actions:
   - action_rekomendasi_laptop
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

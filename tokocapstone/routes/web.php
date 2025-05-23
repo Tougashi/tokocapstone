@@ -9,6 +9,7 @@
     use App\Http\Controllers\WishlistController;
     use App\Http\Controllers\OrderController;
     use App\Http\Controllers\HomeController;
+    use App\Http\Controllers\ChatbotController;
     use \UniSharp\LaravelFilemanager\Lfm;
 
     /*
@@ -128,6 +129,13 @@
         // Password Change
         Route::get('change-password', [AdminController::class, 'changePassword'])->name('change.password.form');
         Route::post('change-password', [AdminController::class, 'changPasswordStore'])->name('change.password');
+
+        // Chatbot routes
+        Route::get('/chatbot/intents', [ChatbotController::class, 'intents'])->name('chatbot.intents');
+        Route::get('/chatbot/stories', [ChatbotController::class, 'stories'])->name('chatbot.stories');
+        Route::match(['get', 'post'], '/chatbot/train', [ChatbotController::class, 'trainModel'])->name('chatbot.train');
+        Route::post('/chatbot/intent/update', [ChatbotController::class, 'updateIntent'])->name('chatbot.updateIntent');
+        Route::post('/chatbot/story/update', [ChatbotController::class, 'updateStory'])->name('chatbot.updateStory');
     });
 
 

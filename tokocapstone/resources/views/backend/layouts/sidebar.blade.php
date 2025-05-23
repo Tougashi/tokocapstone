@@ -101,8 +101,29 @@
         </a>
     </li>
 
+    <!-- Divider -->
+    <hr class="sidebar-divider">
 
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Chatbot AI
+    </div>
 
+    <!-- Chatbot Management -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#chatbotCollapse" aria-expanded="true" aria-controls="chatbotCollapse">
+          <i class="fas fa-robot"></i>
+          <span>Manajemen Chatbot</span>
+        </a>
+        <div id="chatbotCollapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Pengaturan Chatbot:</h6>
+            <a class="collapse-item" href="{{route('chatbot.intents')}}">Intents & Responses</a>
+            <a class="collapse-item" href="{{route('chatbot.stories')}}">Stories</a>
+            <a class="collapse-item" href="{{route('chatbot.train')}}">Train Model</a>
+          </div>
+        </div>
+    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

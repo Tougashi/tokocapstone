@@ -1,40 +1,11 @@
-version: "3.1"
-
+version: '3.1'
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - halo
-    - selamat pagi
-    - selamat siang
-    - selamat sore
-    - selamat malam
-
-- intent: goodbye
-  examples: |
-    - bye
-    - goodbye
-    - sampai jumpa
-    - selamat tinggal
-    - terima kasih
-    - thanks
-
-- intent: cari_laptop
-  examples: |
-    - saya cari laptop [ASUS](brand)
-    - cari laptop [ACER](brand)
-    - rekomendasi laptop [HP](brand)
-    - laptop [LENOVO](brand)
-    - mau beli laptop [DELL](brand)
-    - cari laptop [APPLE](brand)
-    - saya butuh laptop [ASUS](brand) harga [15](max) juta
-    - cari laptop [ACER](brand) dibawah [10](max) juta
-    - mau beli laptop [HP](brand) budget [20](max) juta
-    - rekomendasi laptop [LENOVO](brand) harga [8](min) sampai [12](max) juta
-    - laptop [DELL](brand) antara [5](min) sampai [8](max) juta
-    - laptop [APPLE](brand) kisaran [25](min) juta
-    - cari laptop [ASUS](brand) range harga [10](min) sampai [15](max) juta
-    - rekomendasi laptop [ACER](brand) budget maksimal [8](max) juta
-    - laptop [HP](brand) minimal harga [6](min) juta
+  -
+    intent: greet
+    examples: "|\n      - |\n      - - - - - - - - - - - - - hey\n      - - - - - - - - - - - - - hello\n      - - - - - - - - - - - - - hi\n      - - - - - - - - - - - - - halo\n      - - - - - - - - - - - - - selamat pagi\n      - - - - - - - - - - - - - selamat siang\n      - - - - - - - - - - - - - selamat sore\n      - - - - - - - - - - - - - selamat malam"
+  -
+    intent: goodbye
+    examples: "|\n      - |\n      - - - bye\n      - - - goodbye\n      - - - sampai jumpa\n      - - - selamat tinggal\n      - - - terima kasih\n      - - - thanks"
+  -
+    intent: cari_laptop
+    examples: "- saya cari laptop [ASUS](brand)\n- cari laptop [ACER](brand)\n- rekomendasi laptop [HP](brand)\n- laptop [LENOVO](brand)\n- mau beli laptop [DELL](brand)\n- cari laptop [APPLE](brand)\n- saya butuh laptop [ASUS](brand) harga [15](max) juta\n- cari laptop [ACER](brand) dibawah [10](max) juta\n- mau beli laptop [HP](brand) budget [20](max) juta\n- rekomendasi laptop [LENOVO](brand) harga [8](min) sampai [12](max) juta\n- laptop [DELL](brand) antara [5](min) sampai [8](max) juta\n- laptop [APPLE](brand) kisaran [25](min) juta\n- cari laptop [ASUS](brand) range harga [10](min) sampai [15](max) juta\n- rekomendasi laptop [ACER](brand) budget maksimal [8](max) juta\n- laptop [HP](brand) minimal harga [6](min) juta\n"
