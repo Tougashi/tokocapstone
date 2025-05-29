@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChatbotController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +20,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// Chatbot API routes
+Route::prefix('chatbot')->group(function () {
+    Route::get('/search-laptops', [ChatbotController::class, 'searchLaptops']);
+});
 
 Route::get('/products', [ProductController::class, 'search']);

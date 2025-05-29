@@ -1,11 +1,130 @@
 version: '3.1'
 nlu:
-  -
-    intent: greet
-    examples: "test\nhello\nhi\nhalo\nselamat pagi\nselamat siang\nselamat sore\nselamat malam"
-  -
-    intent: goodbye
-    examples: "bye\ngoodbye\nsampai jumpa\nselamat tinggal\nterima kasih\nthanks"
-  -
-    intent: cari_laptop
-    examples: "saya cari laptop [ASUS](brand)\ncari laptop [ACER](brand)\nrekomendasi laptop [HP](brand)\nlaptop [LENOVO](brand)\nmau beli laptop [DELL](brand)\ncari laptop [APPLE](brand)\nsaya butuh laptop [ASUS](brand) harga [15](max) juta\ncari laptop [ACER](brand) dibawah [10](max) juta\nmau beli laptop [HP](brand) budget [20](max) juta\nrekomendasi laptop [LENOVO](brand) harga [8](min) sampai [12](max) juta\nlaptop [DELL](brand) antara [5](min) sampai [8](max) juta\nlaptop [APPLE](brand) kisaran [25](min) juta\ncari laptop [ASUS](brand) range harga [10](min) sampai [15](max) juta\nrekomendasi laptop [ACER](brand) budget maksimal [8](max) juta\nlaptop [HP](brand) minimal harga [6](min) juta"
+  - intent: greet
+    examples: |
+      - hello
+      - hi
+      - halo
+      - hai
+      - hallo
+      - selamat pagi
+      - selamat siang
+      - selamat sore
+      - selamat malam
+      - apa kabar
+      - good morning
+      - good afternoon
+      - good evening
+      - permisi
+      - assalamualaikum
+      - salam
+      - halo bot
+      - hai bot
+      - halo admin
+      - saya butuh bantuan
+      - tolong bantu saya
+      
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - sampai jumpa
+      - selamat tinggal
+      - terima kasih
+      - thanks
+      
+  - intent: cari_laptop
+    examples: |
+      - saya cari laptop [ASUS](brand)
+      - cari laptop [ACER](brand)
+      - rekomendasi laptop [HP](brand)
+      - laptop [LENOVO](brand)
+      - mau beli laptop [DELL](brand)
+      - cari laptop [APPLE](brand)
+      - saya butuh laptop [ASUS](brand) harga [15](max) juta
+      - cari laptop [ACER](brand) dibawah [10](max) juta
+      - mau beli laptop [HP](brand) budget [20](max) juta
+      - rekomendasi laptop [LENOVO](brand) harga [8](min) sampai [12](max) juta
+      - laptop [DELL](brand) antara [5](min) sampai [8](max) juta
+      - laptop [APPLE](brand) kisaran [25](min) juta
+      - cari laptop [ASUS](brand) range harga [10](min) sampai [15](max) juta
+      - rekomendasi laptop [ACER](brand) budget maksimal [8](max) juta
+      - laptop [HP](brand) minimal harga [6](min) juta
+      - ada laptop [ASUS](brand) gak?
+      - laptop [DELL](brand) yang murah
+      - laptop [HP](brand) untuk gaming
+      - mau laptop [LENOVO](brand) dibawah [5](max) juta
+      - laptop [ACER](brand) harga [7](min) juta keatas
+      - cari laptop [APPLE](brand) second
+      - laptop [ASUS](brand) buat kerja
+      - rekomendasi laptop [HP](brand) untuk mahasiswa
+      - laptop [DELL](brand) yang bagus
+      - cari laptop [ROG](brand)
+      - laptop [ROG](brand) gaming
+      - laptop [THINKPAD](brand) untuk bisnis
+      - [MACBOOK](brand) yang murah
+      - laptop [IDEAPAD](brand) untuk kuliah
+      - [ALIENWARE](brand) untuk gaming
+      - laptop [MSI](brand) gaming
+      - [PREDATOR](brand) gaming laptop
+      - laptop [OMEN](brand) HP
+      - [INSPIRON](brand) DELL
+      - laptop [XPS](brand) DELL
+      - [LEGION](brand) LENOVO gaming
+      - laptop [LOQ](brand) LENOVO
+      - [SAMSUNG](brand) laptop
+      - laptop [XIAOMI](brand)
+      - cari laptop murah
+      - laptop gaming
+      - laptop untuk editing
+      - laptop untuk kuliah
+      - laptop harga dibawah [10](max) juta
+      - laptop budget [15](max) juta
+      - laptop [5](min) sampai [10](max) juta
+      - cari laptop bagus
+      - laptop terbaru
+      - laptop second
+      - laptop bekas
+      - rekomendasi laptop
+      - laptop untuk desain
+      - laptop ringan
+      - laptop tipis
+      - laptop brand [ASUS](brand)
+      - laptop merek [ACER](brand)
+      - ada [LENOVO](brand) tidak?
+      - [APPLE](brand) MacBook tersedia?
+
+  - intent: affirm
+    examples: |
+      - ya
+      - iya
+      - benar
+      - betul
+      - ok
+      - oke
+      - baik
+      - setuju
+      - yes
+      - yep
+
+  - intent: deny
+    examples: |
+      - tidak
+      - nggak
+      - gak
+      - no
+      - bukan
+      - salah
+      - enggak
+
+  - intent: out_of_scope
+    examples: |
+      - apa itu rasa?
+      - siapa presiden indonesia?
+      - cuaca hari ini
+      - cara masak nasi
+      - harga saham
+      - resep ayam goreng
+      - jadwal kereta
+      - nomor telepon
+      - alamat kantor

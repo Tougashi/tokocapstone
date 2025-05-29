@@ -3,48 +3,52 @@ intents:
   - greet
   - goodbye
   - cari_laptop
+  - affirm
+  - deny
+  - out_of_scope
+
 entities:
   - brand
   - kategori
   - min
   - max
+
 slots:
   brand:
     type: text
     mappings:
-      -
-        type: from_entity
+      - type: from_entity
         entity: brand
   kategori:
     type: text
     mappings:
-      -
-        type: from_entity
+      - type: from_entity
         entity: kategori
   min:
     type: float
     mappings:
-      -
-        type: from_entity
+      - type: from_entity
         entity: min
   max:
     type: float
     mappings:
-      -
-        type: from_entity
+      - type: from_entity
         entity: max
+
 responses:
   utter_greet:
-    -
-      text: "Halo wow! Ada yang bisa saya bantu? \r\nAnda bisa mencari laptop dengan menyebutkan merek (ASUS, ACER, HP, LENOVO, DELL, APPLE) dan kategori penggunaan (gaming, editing, dll)"
+    - text: "Halo! Selamat datang di Toko Capstone! 🛒✨\nSaya adalah asisten virtual yang siap membantu Anda mencari laptop impian.\n\n🔍 Anda bisa mencari laptop dengan cara:\n• Menyebutkan merek: ASUS, ACER, HP, LENOVO, DELL, APPLE\n• Menentukan budget: 'laptop dibawah 10 juta'\n• Gabungan keduanya: 'laptop ASUS dibawah 15 juta'\n\nSilakan ketik pencarian Anda!"
+  
   utter_goodbye:
-    -
-      text: 'Terima kasih telah menggunakan layanan kami. Sampai jumpa!'
-  utter_cari_laptop:
-    -
-      text: ''
+    - text: 'Terima kasih telah menggunakan layanan kami! 🙏\nSemoga Anda menemukan laptop yang tepat. Sampai jumpa! 👋'
+  
+  utter_default:
+    - text: "Maaf, saya belum memahami permintaan Anda. 😅\n\nSaya khusus membantu pencarian laptop. Silakan coba:\n• 'cari laptop ASUS'\n• 'laptop dibawah 10 juta'\n• 'rekomendasi laptop HP untuk gaming'\n\nAda yang bisa saya bantu?"
+
 actions:
   - action_rekomendasi_laptop
+  - action_default_fallback
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

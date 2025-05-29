@@ -20,21 +20,27 @@ stories:
   - action: action_rekomendasi_laptop
   - intent: goodbye
   - action: utter_goodbye
-- story: greet and search laptop
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: cari_laptop
-  - action: action_rekomendasi_laptop
-  - intent: goodbye
-  - action: utter_goodbye
 
 - story: direct laptop search
   steps:
   - intent: cari_laptop
   - action: action_rekomendasi_laptop
 
-- story: say goodbye
+- story: fallback path
   steps:
-  - intent: goodbye
+  - intent: out_of_scope
+  - action: utter_default
+
+- story: affirm after recommendation
+  steps:
+  - intent: cari_laptop
+  - action: action_rekomendasi_laptop
+  - intent: affirm
   - action: utter_goodbye
+
+- story: deny after recommendation
+  steps:
+  - intent: cari_laptop
+  - action: action_rekomendasi_laptop
+  - intent: deny
+  - action: utter_greet
