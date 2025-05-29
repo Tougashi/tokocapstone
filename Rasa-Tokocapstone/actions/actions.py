@@ -101,13 +101,13 @@ class ActionRekomendasiLaptop(Action):
                         message += f"<div class='laptop-item'>"
                         message += f"<div class='laptop-title'>{i}. <strong>{nama}</strong></div>"
                         message += f"<div class='laptop-details'>"
-                        message += f"<div class='detail-row'>💰 <span class='price'>{harga_formatted}</span></div>"
-                        message += f"<div class='detail-row'>🏷️ <span class='brand'>{merek_laptop}</span></div>"
-                        message += f"<div class='detail-row'>📁 <span class='category'>{kategori}</span></div>"
-                        message += f"<div class='detail-row'>💻 <span class='spec'>{spesifikasi}</span></div>"
+                        message += f"<div class='detail-row'>💰Harga: <span class='price'>{harga_formatted}</span></div>"
+                        message += f"<div class='detail-row'>🏷️ Merek: <span class='brand'>{merek_laptop}</span></div>"
+                        message += f"<div class='detail-row'>📁 Kategori: <span class='category'>{kategori}</span></div>"
+                        message += f"<div class='detail-row'>💻 Spefisikasi: <span class='spec'>{spesifikasi}</span></div>"
                         
                         if detail_url:
-                            message += f"<div class='detail-row'>🔗 <a href=\"{detail_url}\" target=\"_blank\" class='product-link'>Lihat Detail Produk</a></div>"
+                            message += f"<div class='detail-row'>🔗 <a href=\"{detail_url}\" target=\"_blank\" class='product-link' style='color: blue;'>Lihat Detail Produk</a></div>"
                         
                         message += f"</div></div>"
                     
@@ -150,3 +150,14 @@ class ActionRekomendasiLaptop(Action):
             parse_mode='HTML'  # Enable HTML parsing
         )
         return []
+
+# class ActionDefaultFallback(Action):
+#     def name(self) -> Text:
+#         return "action_default_fallback"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+#         dispatcher.utter_message(text="Maaf, saya tidak mengerti maksud Anda. Bisakah Anda mengulangi pertanyaan dengan cara yang berbeda?")
+#         return []

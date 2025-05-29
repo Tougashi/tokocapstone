@@ -90,12 +90,12 @@
 </section>
 
 <!-- Tombol Bulat Chat -->
-<div id="chat-toggle" onclick="toggleChat()" style="position: fixed; bottom: 20px; left: 20px; background: #28a745; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 999;">
-    <img src="{{ asset('frontend/img/live-chat.png') }}" alt="Chat" style="width: 30px; height: 30px;">
+<div id="chat-toggle" onclick="toggleChat()" style="position: fixed; bottom: 20px; right: 20px; background: #28a745; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 999;">
+    <img src="{{ asset('frontend/img/live-chat.png') }}" alt="Chat" style="width: 30px; height: 30px; filter: brightness(0) invert(1);">
 </div>
 
   <!-- Modal Chat -->
-<div id="chat-modal" style="display: none; position: fixed; bottom: 90px; left: 20px; width: 300px; height: 400px; background: #fff; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 999;">
+<div id="chat-modal" style="display: none; position: fixed; bottom: 90px; right: 20px; width: 400px; height: 400px; background: #fff; border: 1px solid #ccc; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 999;">
     <div style="background: #28a745; color: white; padding: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px;">
         <strong>Live Chat</strong>
         <span onclick="toggleChat()" style="float: right; cursor: pointer;">✖</span>
