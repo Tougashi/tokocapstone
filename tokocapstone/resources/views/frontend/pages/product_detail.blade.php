@@ -66,7 +66,7 @@
 											<!-- Description -->
 											<div class="short">
 												<h4>{{$product_detail->title}}</h4>
-												<div class="rating-main">
+												{{-- <div class="rating-main">
 													<ul class="rating">
 														@php
 															$rate=ceil($product_detail->getReview->avg('rate'))
@@ -80,7 +80,7 @@
 															@endfor
 													</ul>
 													<a href="#" class="total-review">({{$product_detail['getReview']->count()}}) Ulasan</a>
-                                                </div>
+                                                </div> --}}
 												<p class="price">Rp {{number_format($product_detail->price,0,',','.')}}</p>
 												<p class="description">{!!($product_detail->summary)!!}</p>
 											</div>
@@ -222,10 +222,10 @@
 																				$rate +=$rate
 																			}
 																		@endphp --}}
-																		<h4>{{ceil($product_detail->getReview->avg('rate'))}} <span>(Semua)</span></h4>
-																		<span>Berdasarkan {{$product_detail->getReview->count()}} Komen</span>
+																		{{-- <h4>{{ceil($product_detail->getReview->avg('rate'))}} <span>(Semua)</span></h4>
+																		<span>Berdasarkan {{$product_detail->getReview->count()}} Komen</span> --}}
 																	</div>
-																	@foreach($product_detail['getReview'] as $data)
+																	{{-- @foreach($product_detail['getReview'] as $data)
 																	<!-- Single Rating -->
 																	<div class="single-rating">
 																		<div class="rating-author">
@@ -255,7 +255,7 @@
 																	</div>
 																	<!--/ End Single Rating -->
 																	@endforeach
-																</div>
+																</div> --}}
 
 																<!--/ End Review -->
 

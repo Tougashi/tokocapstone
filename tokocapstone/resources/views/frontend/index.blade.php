@@ -140,7 +140,15 @@
 
       chatBox.scrollTop = chatBox.scrollHeight;
     }
-  </script>
+
+    // Add event listener for Enter key
+    document.getElementById("chat-input").addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault(); // Prevent default form submission
+        sendMessage();
+      }
+    });
+</script>
 
 
 <script>
