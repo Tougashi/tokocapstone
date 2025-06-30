@@ -1,30 +1,34 @@
 version: '3.1'
 nlu:
-  - intent: greet
-    examples: |
-      - hello
-      - hi
-      - halo
-      - hai
-      - hallo
-      - selamat pagi
-      - selamat siang
-      - selamat sore
-      - selamat malam
-      - apa kabar
-      - good morning
-      - good afternoon
-      - good evening
-      - permisi
-      - assalamualaikum
-      - salam
-      - halo bot
-      - hai bot
-      - halo admin
-      - saya butuh bantuan
-      - tolong bantu saya
-      
-  - intent: goodbye
+  -
+    intent: greet
+    examples: |-
+      |
+            - hello
+            - hi
+            - halo
+            - hai
+            - hallo
+            - selamat pagi
+            - selamat siang
+            - selamat sore
+            - selamat malam
+            - apa kabar
+            - good morning
+            - good afternoon
+            - good evening
+            - permisi
+            - assalamualaikum
+            - salam
+            - halo bot
+            - hai bot
+            - halo admin
+            - saya butuh bantuan
+            - tolong bantu saya
+            - tolong
+            - hey
+  -
+    intent: goodbye
     examples: |
       - bye
       - goodbye
@@ -32,8 +36,8 @@ nlu:
       - selamat tinggal
       - terima kasih
       - thanks
-      
-  - intent: cari_laptop
+  -
+    intent: cari_laptop
     examples: |
       - saya cari laptop [ASUS](brand)
       - cari laptop [ACER](brand)
@@ -93,8 +97,8 @@ nlu:
       - laptop merek [ACER](brand)
       - ada [LENOVO](brand) tidak?
       - [APPLE](brand) MacBook tersedia?
-
-  - intent: affirm
+  -
+    intent: affirm
     examples: |
       - ya
       - iya
@@ -106,8 +110,8 @@ nlu:
       - setuju
       - yes
       - yep
-
-  - intent: deny
+  -
+    intent: deny
     examples: |
       - tidak
       - nggak
@@ -116,8 +120,8 @@ nlu:
       - bukan
       - salah
       - enggak
-
-  - intent: out_of_scope
+  -
+    intent: out_of_scope
     examples: |
       - apa itu rasa?
       - siapa presiden indonesia?

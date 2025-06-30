@@ -134,6 +134,10 @@
         Route::get('/chatbot/intents', [ChatbotController::class, 'intents'])->name('chatbot.intents');
         Route::get('/chatbot/stories', [ChatbotController::class, 'stories'])->name('chatbot.stories');
         Route::match(['get', 'post'], '/chatbot/train', [ChatbotController::class, 'trainModel'])->name('chatbot.train');
+        Route::get('/chatbot/train-simple', [ChatbotController::class, 'trainModelSimple'])->name('chatbot.train.simple');
+        Route::get('/chatbot/debug', [ChatbotController::class, 'debugTraining'])->name('chatbot.debug');
+        Route::get('/chatbot/kill-processes', [ChatbotController::class, 'killTrainingProcesses'])->name('chatbot.kill');
+        Route::get('/chatbot/status', [ChatbotController::class, 'checkTrainingStatus'])->name('chatbot.status');
         Route::post('/chatbot/intent/update', [ChatbotController::class, 'updateIntent'])->name('chatbot.updateIntent');
         Route::post('/chatbot/story/update', [ChatbotController::class, 'updateStory'])->name('chatbot.updateStory');
     });

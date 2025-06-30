@@ -3,12 +3,15 @@
 
 <head>
 
+    \
+
+    
   @include('backend.layouts.head')
 
 </head>
 
 <body>
-  
+
   <div class="container-fluid">
 
     <div class="row" style="margin-top:10%">
